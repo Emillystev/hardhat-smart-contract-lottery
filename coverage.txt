@@ -1,0 +1,53 @@
+yarn run v1.22.22
+$ /Users/eleneurushadze/HARDHAT-BASED/hardhat-smart-contract-lottery-js/node_modules/.bin/hardhat coverage
+
+Version
+=======
+> solidity-coverage: v0.8.14
+
+Instrumenting for coverage...
+=============================
+
+> Raffle.sol
+> test/VRFCoordinatorV2MockTest.sol
+
+Compilation:
+============
+
+Nothing to compile
+
+Network Info
+============
+> HardhatEVM: v2.22.17
+> network:    hardhat
+
+
+
+  Raffle
+    enterRaffle
+-------------------
+0x5FbDB2315678afecb367f032d93F642f64180aa3
+-------------------
+      ✔ enterRaffle fails if not enough eth
+      ✔ enterRaffle initializes at open state
+      ✔ if enterRaffle doesnt initializes to open state, it will revert
+      ✔ message sender is pushing into players array
+      ✔ message sender is pushing into players array works for many players
+      ✔ enterRaffle emits an RaffleEnter event
+
+
+  6 passing (230ms)
+
+-------------------------------|----------|----------|----------|----------|----------------|
+File                           |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+-------------------------------|----------|----------|----------|----------|----------------|
+ contracts/                    |    35.71 |     37.5 |    53.33 |     41.3 |                |
+  Raffle.sol                   |    35.71 |     37.5 |    53.33 |     41.3 |... 145,149,153 |
+ contracts/test/               |      100 |      100 |      100 |      100 |                |
+  VRFCoordinatorV2MockTest.sol |      100 |      100 |      100 |      100 |                |
+-------------------------------|----------|----------|----------|----------|----------------|
+All files                      |    35.71 |     37.5 |    53.33 |     41.3 |                |
+-------------------------------|----------|----------|----------|----------|----------------|
+
+> Istanbul reports written to ./coverage/ and ./coverage.json
+Done in 2.22s.
